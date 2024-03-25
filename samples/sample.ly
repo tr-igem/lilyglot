@@ -132,9 +132,9 @@
         \glotInstrument Vlc      %% <-
         \numericTimeSignature
         \clef F
+        c4 ^ \glotText "pizz."      %% <-
         %% Note: "pizz." without a defined multilingual text
         %% is simply drawn in italic style
-        c4 ^ \glotText "pizz."
         c aeh'2 r2 c,4 c aeh'2 c,4 c aeh'2 c,4 c r4 aeh'2 c,4 c
         r aeh' c, c aeh'2 c,4 c
       }
