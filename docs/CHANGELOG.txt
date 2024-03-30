@@ -1,0 +1,44 @@
+ChangeLog for lilyglot
+======================
+
+1 September 2013:
+- Initial release.
+
+5 September 2019:
+- Removed alternative multilingual text and support for tags.
+
+29 September 2019:
+- Removed \glot-music command. Is now in "etc/ekmecoll.ily".
+- Changed \glotTextSpan command. Style argument is a string instead of a number.
+
+21 August 2020:
+- Changed \glot and \glot-x commands. Draw the symbolic name itself
+  if it is not defined.
+- New markup commands \glot-justify and \glot-wordwrap.
+
+5 April 2021:
+- Requires LilyPond 2.22.0.
+- Changed \glotTocItem and \glotTocItemII to support toc levels.
+
+2023-05-06:
+- Fixed wrong default values in \glotInstrument if the current language
+  is set later.
+
+2023-05-29:
+- Changed the interface of the Scheme procedures (glot-xform) and
+  (glot-string-x) to accept any number of format arguments.
+- Fixed wrong conditions for case conversion in (glot-xform).
+- Changed \glot-x to allow the first argument being string or symbol.
+
+2023-07-19:
+- Changed \glot-wordwrap now making use of \ekm-wordwrap-string
+  defined in "etc/ekmecoll.ily".
+
+2023-09-09:
+- Requires LilyPond 2.24.
+- Adapted Unicode support in (glot-xform) for Guile 2.2.
+- Removed command \glot-justify.
+
+2023-09-13:
+- Added special argument "option" to "\glotLanguage" to read language
+  from command line option.
